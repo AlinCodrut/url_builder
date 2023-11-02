@@ -45,9 +45,9 @@ function App() {
     // Constructing final URL with proper encoding and syntax
     const queryParams = new URLSearchParams({
       ref: updatedRefValue,
-      utm_source: updatedSource,
-      utm_medium: updatedMedium,
-      utm_campaign: updatedCampaign
+      mtm_source: updatedSource,
+      mtm_medium: updatedMedium,
+      mtm_campaign: updatedCampaign
     }).toString()
 
     const final_url = `${cleanUrl}?${queryParams}`
@@ -134,7 +134,7 @@ function App() {
               <strong style={{ color: "white" }}>Campaign Source:</strong>
               <p>
                 Identifies the source of your traffic, such as a search engine, newsletter, or other referral. <br />
-                <em>Example:</em> utm_source=newsletter
+                <em>Example:</em> mtm_source=newsletter
               </p>
             </div>
 
@@ -142,7 +142,7 @@ function App() {
               <strong style={{ color: "white" }}>Campaign Medium:</strong>
               <p>
                 Describes the medium used to reach your site, such as email, CPC, social media, affiliate, or QR code. <br />
-                <em>Example:</em> utm_medium=email
+                <em>Example:</em> mtm_medium=email
               </p>
             </div>
 
@@ -150,7 +150,7 @@ function App() {
               <strong style={{ color: "white" }}>Campaign Name:</strong>
               <p>
                 Specifies the individual campaign name, slogan, promo code, or specific promotion associated with your link. <br />
-                <em>Example:</em> utm_campaign=spring_sale
+                <em>Example:</em> mtm_campaign=spring_sale
               </p>
             </div>
 
